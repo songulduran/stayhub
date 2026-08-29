@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StayHub | İstanbul Konaklama Seçenekleri</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary fs-3" href="index.html"
+          >Stay<span class="text-white">Hub</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto ms-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Konaklama</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#destinations"
+                >Popüler Yerler</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#featured">Kampanyalar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hakkımızda</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-2 mt-2 mt-lg-0">
+            <a href="login.html" class="btn btn-outline-light btn-sm px-3"
+              >Giriş Yap</a
+            >
+            <a href="register.html" class="btn btn-primary btn-sm px-3"
+              >Kayıt Ol</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-4">
+      <div class="mb-4">
+        <h2 class="fw-bold fs-3 text-dark">
+          İstanbul'da 128 konaklama bulundu
+        </h2>
+        <p class="text-muted small">
+          Tarihlerinize ve tercihlerinize en uygun tesisler listeleniyor.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <aside class="col-lg-3">
+          <div
+            class="card border-0 shadow-sm rounded-3 p-3 sticky-top"
+            style="top: 90px; z-index: 10"
+          >
+            <div
+              class="d-flex align-items-center justify-content-between pb-3 border-bottom mb-3"
+            >
+              <h5 class="fw-bold m-0 fs-6">Filtrele</h5>
+              <button
+                type="reset"
+                form="filterForm"
+                class="btn btn-link text-decoration-none text-muted p-0 small fw-semibold"
+              >
+                Temizle
+              </button>
+            </div>
+
+            <form id="filterForm">
+              <div class="mb-4">
+                <h6 class="fw-bold small text-dark mb-2">Fiyat</h6>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="price1" />
+                  <label class="form-check-label small text-muted" for="price1"
+                    >0 - 2.000 TL</label
+                  >
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="price2" />
+                  <label class="form-check-label small text-muted" for="price2"
+                    >2.000 - 5.000 TL</label
+                  >
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="price3" />
+                  <label class="form-check-label small text-muted" for="price3"
+                    >5.000 - 10.000 TL</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="price4" />
+                  <label class="form-check-label small text-muted" for="price4"
+                    >10.000+ TL</label
+                  >
+                </div>
+              </div>
+
+              <hr class="text-black-50 my-3" />
+
+              <div class="mb-4">
+                <h6 class="fw-bold small text-dark mb-2">Yıldız</h6>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="star5" />
+                  <label
+                    class="form-check-label small text-warning"
+                    for="star5"
+                  >
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span class="text-muted ms-1">(5 Yıldız)</span>
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="star4" />
+                  <label
+                    class="form-check-label small text-warning"
+                    for="star4"
+                  >
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <span class="text-muted ms-1">(4 Yıldız)</span>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="star3" />
+                  <label
+                    class="form-check-label small text-warning"
+                    for="star3"
+                  >
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <span class="text-muted ms-1">(3 Yıldız)</span>
+                  </label>
+                </div>
+              </div>
+
+              <hr class="text-black-50 my-3" />
+
+              <div class="mb-4">
+                <h6 class="fw-bold small text-dark mb-2">Konaklama Türü</h6>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="typeHotel"
+                  />
+                  <label
+                    class="form-check-label small text-muted"
+                    for="typeHotel"
+                    >Otel</label
+                  >
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="typeApart"
+                  />
+                  <label
+                    class="form-check-label small text-muted"
+                    for="typeApart"
+                    >Apart</label
+                  >
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="typeVilla"
+                  />
+                  <label
+                    class="form-check-label small text-muted"
+                    for="typeVilla"
+                    >Villa</label
+                  >
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="typeHostel"
+                  />
+                  <label
+                    class="form-check-label small text-muted"
+                    for="typeHostel"
+                    >Hostel</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="typeBungalow"
+                  />
+                  <label
+                    class="form-check-label small text-muted"
+                    for="typeBungalow"
+                    >Bungalov</label
+                  >
+                </div>
+              </div>
+
+              <hr class="text-black-50 my-3" />
+
+              <div class="mb-4">
+                <h6 class="fw-bold small text-dark mb-2">Özellikler</h6>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="featureWifi"
+                  />
+                  <label
+                    class="form-check-label small text-muted"
+                    for="featureWifi"
+                    >Wi-Fi</label
+                  >
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="featurePool"
+                  />
+                  <label
+                    class="form-check-label small text-muted"
+                    for="featurePool"
+                    >Havuz</label
+                  >
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="featureParking"
+                  />
+                  <label
+                    class="form-check-label small text-muted"
+                    for="featureParking"
+                    >Otopark</label
+                  >
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="featureBreakfast"
+                  />
+                  <label
+                    class="form-check-label small text-muted"
+                    for="featureBreakfast"
+                    >Kahvaltı</label
+                  >
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="featureAC"
+                  />
+                  <label
+                    class="form-check-label small text-muted"
+                    for="featureAC"
+                    >Klima</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="featureGym"
+                  />
+                  <label
+                    class="form-check-label small text-muted"
+                    for="featureGym"
+                    >Spor Salonu</label
+                  >
+                </div>
+              </div>
+
+              <button
+                type="button"
+                class="btn btn-primary w-100 fw-bold rounded-2 btn-sm py-2"
+              >
+                Filtreleri Uygula
+              </button>
+            </form>
+          </div>
+        </aside>
+
+        <main class="col-lg-9">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+            <div class="col">
+              <div
+                class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden"
+              >
+                <img
+                  src="images/otel-kartı-1.jpg"
+                  class="card-img-top"
+                  alt="Swissotel"
+                  style="height: 180px; object-fit: cover"
+                />
+                <div
+                  class="card-body d-flex flex-column justify-content-between p-3"
+                >
+                  <div>
+                    <h5 class="card-title fw-bold fs-6 mb-1">
+                      Swissotel The Bosphorus
+                    </h5>
+                    <p class="text-muted small mb-2">
+                      <i class="bi bi-geo-alt me-1"></i>Beşiktaş, İstanbul
+                    </p>
+                    <div class="text-warning small mb-3">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <span class="text-dark fw-bold ms-1">4.8</span>
+                    </div>
+                  </div>
+                  <div
+                    class="pt-2 border-top d-flex align-items-center justify-content-between"
+                  >
+                    <div>
+                      <span class="fw-bold text-primary fs-5">8.900 TL</span>
+                      <small class="text-muted d-block" style="font-size: 11px"
+                        >/ gece</small
+                      >
+                    </div>
+                    <a
+                      href="hotel-detail.html"
+                      class="btn btn-outline-primary btn-sm px-3"
+                      >İncele</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden"
+              >
+                <img
+                  src="images/otel-kartı-2.jpg"
+                  class="card-img-top"
+                  alt="Hilton"
+                  style="height: 180px; object-fit: cover"
+                />
+                <div
+                  class="card-body d-flex flex-column justify-content-between p-3"
+                >
+                  <div>
+                    <h5 class="card-title fw-bold fs-6 mb-1">
+                      Hilton Bosphorus
+                    </h5>
+                    <p class="text-muted small mb-2">
+                      <i class="bi bi-geo-alt me-1"></i>Şişli, İstanbul
+                    </p>
+                    <div class="text-warning small mb-3">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      <span class="text-dark fw-bold ms-1">4.7</span>
+                    </div>
+                  </div>
+                  <div
+                    class="pt-2 border-top d-flex align-items-center justify-content-between"
+                  >
+                    <div>
+                      <span class="fw-bold text-primary fs-5">7.200 TL</span>
+                      <small class="text-muted d-block" style="font-size: 11px"
+                        >/ gece</small
+                      >
+                    </div>
+                    <a
+                      href="hotel-detail.html"
+                      class="btn btn-outline-primary btn-sm px-3"
+                      >İncele</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden"
+              >
+                <img
+                  src="images/otel-kartı-3.jpg"
+                  class="card-img-top"
+                  alt="Raffles"
+                  style="height: 180px; object-fit: cover"
+                />
+                <div
+                  class="card-body d-flex flex-column justify-content-between p-3"
+                >
+                  <div>
+                    <h5 class="card-title fw-bold fs-6 mb-1">
+                      Raffles İstanbul
+                    </h5>
+                    <p class="text-muted small mb-2">
+                      <i class="bi bi-geo-alt me-1"></i>Beşiktaş, İstanbul
+                    </p>
+                    <div class="text-warning small mb-3">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <span class="text-dark fw-bold ms-1">4.9</span>
+                    </div>
+                  </div>
+                  <div
+                    class="pt-2 border-top d-flex align-items-center justify-content-between"
+                  >
+                    <div>
+                      <span class="fw-bold text-primary fs-5">14.500 TL</span>
+                      <small class="text-muted d-block" style="font-size: 11px"
+                        >/ gece</small
+                      >
+                    </div>
+                    <a
+                      href="hotel-detail.html"
+                      class="btn btn-outline-primary btn-sm px-3"
+                      >İncele</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container text-center text-md-start">
+        <div class="row">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <h5 class="fw-bold text-primary m-0">
+              Stay<span class="text-white">Hub</span>
+            </h5>
+            <p class="small text-muted mb-0">
+              Hayalinizdeki konaklama alanını kolayca bulun ve rezerve edin.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end align-self-center">
+            <p class="small text-muted mb-0">
+              &copy; 2026 StayHub Inc. Tüm hakları saklıdır.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
