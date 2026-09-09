@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StayHub - Profilim</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-light">
+    <div class="container my-5">
+      <div class="row g-4">
+        <!-- SOL TARAF: Navigasyon Menüsü -->
+        <div class="col-12 col-lg-3">
+          <div
+            class="card border-0 shadow-sm rounded-3 overflow-hidden profile-sidebar"
+          >
+            <div class="list-group list-group-flush">
+              <a
+                href="#profilim"
+                class="list-group-item list-group-item-action py-3 active"
+                data-bs-toggle="list"
+              >
+                <i class="bi bi-person-circle me-2"></i>Profilim
+              </a>
+              <a
+                href="#rezervasyonlarim"
+                class="list-group-item list-group-item-action py-3"
+                data-bs-toggle="list"
+              >
+                <i class="bi bi-journal-bookmark-fill me-2"></i>Rezervasyonlarım
+              </a>
+              <a
+                href="#favorilerim"
+                class="list-group-item list-group-item-action py-3"
+                data-bs-toggle="list"
+              >
+                <i class="bi bi-heart-fill me-2"></i>Favorilerim
+              </a>
+              <a
+                href="#ayarlar"
+                class="list-group-item list-group-item-action py-3"
+                data-bs-toggle="list"
+              >
+                <i class="bi bi-gear-fill me-2"></i>Ayarlar
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SAĞ TARAF: Kullanıcı Bilgileri & İçerik -->
+        <div class="col-12 col-lg-9">
+          <div class="tab-content">
+            <!-- Profilim Tab İçeriği -->
+            <div class="tab-pane fade show active" id="profilim">
+              <!-- Kullanıcı Bilgileri Kartı -->
+              <div class="card border-0 shadow-sm rounded-3 p-4 mb-4">
+                <h4 class="fw-bold mb-4 text-dark border-bottom pb-2">
+                  <i class="bi bi-person-vcard text-primary me-2"></i>Kullanıcı
+                  Bilgileri
+                </h4>
+
+                <div class="d-flex align-items-center gap-3 mb-4">
+                  <div
+                    class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fs-2 fw-bold profile-avatar"
+                  >
+                    GÇ
+                  </div>
+                  <div>
+                    <h5 class="fw-bold mb-1 text-dark">Gökçe Çevik</h5>
+                    <p class="text-muted small mb-0">Üye ID: #84920</p>
+                  </div>
+                </div>
+
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <label class="form-label text-muted small mb-1"
+                      >E-posta</label
+                    >
+                    <div class="fw-semibold text-dark">gokce@example.com</div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label class="form-label text-muted small mb-1">Ülke</label>
+                    <div class="fw-semibold text-dark">Türkiye</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Yaklaşan Rezervasyonlar Bölümü -->
+              <div class="card border-0 shadow-sm rounded-3 p-4">
+                <h5 class="fw-bold mb-3 text-dark border-bottom pb-2">
+                  <i class="bi bi-calendar-check text-success me-2"></i>Yaklaşan
+                  Rezervasyonlarım
+                </h5>
+
+                <!-- Rezervasyon Kartı -->
+                <div class="border rounded-3 p-3 bg-white">
+                  <div class="row align-items-center g-3">
+                    <div class="col-12 col-md-8">
+                      <div class="d-flex align-items-center gap-2 mb-1">
+                        <h6 class="fw-bold mb-0 text-dark">
+                          Swissotel The Bosphorus
+                        </h6>
+                        <span
+                          class="badge bg-success-subtle text-success border border-success-subtle"
+                          >Onaylandı</span
+                        >
+                      </div>
+                      <p class="text-muted small mb-2">
+                        Deluxe Boğaz Manzaralı Oda • 2 Yetişkin
+                      </p>
+                      <div class="small text-secondary">
+                        <i class="bi bi-calendar3 me-1"></i>15 Ağustos - 18
+                        Ağustos (3 Gece)
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-md-end">
+                      <button
+                        class="btn btn-outline-primary btn-sm fw-semibold w-100 w-md-auto"
+                      >
+                        Detayları Gör
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
